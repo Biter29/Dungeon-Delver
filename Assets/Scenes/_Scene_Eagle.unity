@@ -358,6 +358,8 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
+  - component: {fileID: 534669908}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -441,6 +443,32 @@ MonoBehaviour:
   mapCollisions: {fileID: 4900000, guid: 8c7dddc175b4444fa9bf2466a05b5324, type: 3}
   tilePrefab: {fileID: 114023361836766180, guid: 516dd681c56893b4d9b7f9389b3f5f71,
     type: 2}
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1aa6c90ed72fa45995791ea61f10fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drayInRm: {fileID: 1321589551}
+  transTime: 0.5
+--- !u!114 &534669908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3857a606d3a1cfa43ac94e9ca8f1aafa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keepInRoom: 0
+  gridMult: 1
 --- !u!1 &619631281
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +666,7 @@ MonoBehaviour:
   speed: 5
   attackDuration: 0.25
   attackDelay: 0.5
+  transitionDelay: 0.5
   dirHeld: -1
   facing: 1
   mode: 0
