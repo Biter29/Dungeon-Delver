@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 337669552}
   - component: {fileID: 337669553}
   - component: {fileID: 337669554}
+  - component: {fileID: 337669555}
   m_Layer: 0
   m_Name: Skeletos
   m_TagString: Untagged
@@ -347,6 +348,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a903095be69e6094fbd675b87a62bbb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &337669555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 337669546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb2b1cb65a54bfd4d9d92134b75f8be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  knockback: 1
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,10 +682,12 @@ MonoBehaviour:
   attackDuration: 0.25
   attackDelay: 0.5
   transitionDelay: 0.5
+  maxHealth: 10
   dirHeld: -1
   facing: 1
   mode: 0
   numKeys: 0
+  _health: 0
 --- !u!135 &1321589550
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1154,6 +1170,26 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224000012798845922, guid: ef2195d4d1bab4df9ad6dc73b0faebb1,
     type: 2}
   m_PrefabInternal: {fileID: 1920197356}
+--- !u!1 &1920197358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013282365372, guid: ef2195d4d1bab4df9ad6dc73b0faebb1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1920197356}
+--- !u!114 &1920197359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1920197358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87eb5ef1c87e70948b4c88de36d1022b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dray: {fileID: 1321589549}
+  healthEmpty: {fileID: 21300000, guid: 7e5dff7b4f89342ffaefe40a143cfe81, type: 3}
+  healthHalf: {fileID: 21300002, guid: 7e5dff7b4f89342ffaefe40a143cfe81, type: 3}
+  healthFull: {fileID: 21300004, guid: 7e5dff7b4f89342ffaefe40a143cfe81, type: 3}
 --- !u!1 &2061158102
 GameObject:
   m_ObjectHideFlags: 0
